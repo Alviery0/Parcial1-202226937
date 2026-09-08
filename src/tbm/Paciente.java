@@ -2,9 +2,9 @@ package tbm;
 
 public class Paciente {
 	private String genero;
-	private double peso;
-	private double altura;
-	private int edad;
+	private double peso; //en kilogramos
+	private double altura; //en centimetros
+	private int edad; //en anios
 	
 	
 	public Paciente(String genero, double peso, double altura, int edad) {
@@ -58,42 +58,51 @@ public class Paciente {
 					boolean verificarEdad = false;
 					
 					//me faltó verificar que los atributos cumplieran con los requerimientos para calcular el TBM
-					double tbm = null;
+					double tbm = 0.0;
 					
-					if (verificarPeso == true) {
-						if (verificarAltura== true) {
-							if  (verificarEdad == true) {
-								
-								
-							}
-							
-						}
-						
+					if (60 <= peso && peso <=110) {
+						verificarPeso= true;
 					}
+					if (160 <= altura && peso <=195) {
+						verificarAltura= true;
+					}
+					
 						
+					if  (edad > 15) {
+						verificarEdad= true;
+					}
+					
+					if (verificarEdad && verificarAltura && verificarPeso) {
+						tbm = 88.362 + (13.397 * peso ) + (4.799 * altura) - (5.677 *edad);
+					}
 					
 					System.out.println("La tasa metabolica basal (TMB) es: " + tbm);
 				case "mujer":
 					
 					//verificar de las condiciones de peso, altura y edad
-					boolean verificarPeso = false;
-					boolean verificarAltura = false;
-					boolean verificarEdad = false;
+					boolean verificarPeso1 = false;
+					boolean verificarAltura1 = false;
+					boolean verificarEdad1 = false;
 					
 					//me faltó verificar que los atributos cumplieran con los requerimientos para calcular el TBM
-					double tbm = null;
+					double tbm1 = 0.0;
 					
-					if (verificarPeso == true) {
-						if (verificarAltura== true) {
-							if  (verificarEdad == true) {
-								
-								
-							}
-							
-						}
-						
+					if (40 <= peso && peso <=80) {
+						verificarPeso1= true;
 					}
-					System.out.println("La tasa metabolica basal (TMB) es: " + tbm);
+					if (140 <= altura && peso <=180) {
+						verificarAltura1= true;
+					}
+					
+						
+					if  (edad > 15) {
+						verificarEdad1= true;
+					}
+					
+					if (verificarEdad1 && verificarAltura1 && verificarPeso1) {
+						tbm = 447.593 + (9.247 * peso ) + (3.098 * altura) - (4.33 *edad);
+					}
+					System.out.println("La tasa metabolica basal (TMB) es: " + tbm1);
 					
 					
 				default:
