@@ -47,7 +47,59 @@ public class Paciente {
 	}
 	
 	public void calcularTbm() {
+	
+		String generoMinusculas= genero.toLowerCase();
 		
+		switch (generoMinusculas){
+				case "hombre":
+					//verificar de las condiciones de peso, altura y edad
+					boolean verificarPeso = false;
+					boolean verificarAltura = false;
+					boolean verificarEdad = false;
+					
+					//me faltó verificar que los atributos cumplieran con los requerimientos para calcular el TBM
+					double tbm = null;
+					
+					if (verificarPeso == true) {
+						if (verificarAltura== true) {
+							if  (verificarEdad == true) {
+								
+								
+							}
+							
+						}
+						
+					}
+						
+					
+					System.out.println("La tasa metabolica basal (TMB) es: " + tbm);
+				case "mujer":
+					
+					//verificar de las condiciones de peso, altura y edad
+					boolean verificarPeso = false;
+					boolean verificarAltura = false;
+					boolean verificarEdad = false;
+					
+					//me faltó verificar que los atributos cumplieran con los requerimientos para calcular el TBM
+					double tbm = null;
+					
+					if (verificarPeso == true) {
+						if (verificarAltura== true) {
+							if  (verificarEdad == true) {
+								
+								
+							}
+							
+						}
+						
+					}
+					System.out.println("La tasa metabolica basal (TMB) es: " + tbm);
+					
+					
+				default:
+					System.out.println("Los datos no incorrectos para calcular TBM");
+				
+		}
 	}
 	
 
