@@ -63,7 +63,7 @@ public class Paciente {
 					if (60 <= peso && peso <=110) {
 						verificarPeso= true;
 					}
-					if (160 <= altura && peso <=195) {
+					if (160 <= altura && altura <=195) {
 						verificarAltura= true;
 					}
 					
@@ -90,7 +90,7 @@ public class Paciente {
 					if (40 <= peso && peso <=80) {
 						verificarPeso1= true;
 					}
-					if (140 <= altura && peso <=180) {
+					if (140 <= altura && altura <=180) {
 						verificarAltura1= true;
 					}
 					
