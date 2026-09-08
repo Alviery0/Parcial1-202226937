@@ -46,6 +46,9 @@ public class Paciente {
 		this.edad = edad;
 	}
 	
-	"""public String calcularTbm():"""
+	public void calcularTbm() {
+		
+	}
+	
 
 }
